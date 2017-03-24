@@ -1,0 +1,40 @@
+.page{
+    font-family: verdana;
+    min-height:100%;
+	position:relative;
+}
+
+.header{
+    background-color: #000;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #000;
+	position:absolute;
+	bottom:0;
+	width:100%;
+    color: #fff;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    margin-left: 0%;
+    width: 100%;
+    border: double;
+}
+
+.form-control{
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+#vision-oe, #possui-oe{
+    margin-top: 62px;
+}
+
+#vision-od, #odireito-vision, #possui-od, #odireito-nao, #odireito-sim, #quanto-odireito{
+    position: relative;
+    left: 50%;
+}

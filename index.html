@@ -1,0 +1,541 @@
+<!DOCTYPE>
+
+<!-- Autor: Richard Zocolau Marusso
+     Linkedin: http://www.linkedin.com/in/richard-marusso/
+     Github: https://github.com/marusso
+-->
+
+
+<html>
+    <head>
+        <title> Lentes Hatsu </title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/style.css" />   
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+    </head>
+
+    <body>
+        <div class="page">
+            <div class="header">
+                <div class="container">
+                    <img src="imagens/logo.png" />
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                       <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputLente" class="col-sm-3 control-label">Grau Esférico entre -3 e -12?</label>
+                                    <select name="lente" class="form-control" id="lentes">
+                                        <option>---</option>
+                                        <option value="N">Não</option>
+                                        <option value="S">Sim</option>
+                                    </select>
+                            </div>
+                            
+                            <!--            Lente Prime                     -->
+                            
+                            <div class="form-group">
+                                <div class="col-md-6">  
+                                <div id="possui-od" style="display: none;">
+                                    <h3>Lente Prime</h3> 
+                                <span>Possui Grau Cilindrico no Olho Direito?</span>
+                                    <select name="od" class="form-control" id="od">
+                                        <option>--</option>
+                                        <option value="N-od">Não</option>
+                                        <option value="S-od">Sim</option>
+                                    </select>
+                                </div>
+                                <div id="quanto-odireito" style="display: none;">
+                                 <span>Quanto?</span>
+                                    <select name="quanto-od" class="form-control" id="quanto-od">
+                                        <option>--</option>
+                                        <option>-0.25</option>
+                                        <option>-0.50</option>
+                                        <option>-0.75</option>
+                                        <option>-1.00</option>
+                                        <option>-1.25</option>
+                                        <option>-1.50</option>
+                                        <option>-1.75</option>
+                                        <option>-2.00</option>
+                                    </select>
+                                </div>
+                                <div id="odireito-sim" style="display: none;">
+                                <span>Grau Esférico Olho Direito</span>
+                                    <select name="od-sim" class="form-control" id="od-sim">
+                                        <option>--</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                        <option>-5.25</option>
+                                        <option>-5.50</option>
+                                        <option>-5.75</option>
+                                        <option>-6.00</option>
+                                        <option>-6.25</option>
+                                        <option>-6.50</option>
+                                        <option>-6.75</option>
+                                        <option>-7.00</option>
+                                        <option>-7.25</option>
+                                        <option>-7.50</option>
+                                        <option>-7.75</option>
+                                        <option>-8.00</option>
+                                        <option>-8.25</option>
+                                        <option>-8.50</option>
+                                        <option>-8.75</option>
+                                        <option>-9.00</option>
+                                        <option>-9.25</option>
+                                        <option>-9.50</option>
+                                        <option>-9.75</option>
+                                        <option>-10.00</option>
+                                    </select>
+                                </div>
+                                <div id="odireito-nao" style="display: none;">
+                                <span>Grau Esférico Olho Direito</span>
+                                    <select name="od-nao" class="form-control" id="od-nao">
+                                        <option>--</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                        <option>-5.25</option>
+                                        <option>-5.50</option>
+                                        <option>-5.75</option>
+                                        <option>-6.00</option>
+                                        <option>-6.25</option>
+                                        <option>-6.50</option>
+                                        <option>-6.75</option>
+                                        <option>-7.00</option>
+                                        <option>-7.25</option>
+                                        <option>-7.50</option>
+                                        <option>-7.75</option>
+                                        <option>-8.00</option>
+                                        <option>-8.25</option>
+                                        <option>-8.50</option>
+                                        <option>-8.75</option>
+                                        <option>-9.00</option>
+                                        <option>-9.25</option>
+                                        <option>-9.50</option>
+                                        <option>-9.75</option>
+                                        <option>-10.00</option>
+                                        <option>-10.25</option>
+                                        <option>-10.50</option>
+                                        <option>-10.75</option>
+                                        <option>-11.00</option>
+                                        <option>-11.25</option>
+                                        <option>-11.50</option>
+                                        <option>-11.75</option>
+                                        <option>-12.00</option>
+                                    </select>
+                                </div> 
+                            </div>
+                            <div class="col-md-6">
+                                <div id="possui-oe" style="display: none;">
+                                    <span>Possui Grau Cilindrico no Olho Esquerdo?</span>
+                                    <select name="oe" class="form-control" id="oe">
+                                        <option>--</option>
+                                        <option value="N-oe">Não</option>
+                                        <option value="S-oe">Sim</option>
+                                    </select>
+                                </div>
+                                <div id="quanto-oesquerdo" style="display: none;">
+                                 <span>Quanto?</span>
+                                    <select name="quanto-oe" class="form-control" id="quanto-oe">
+                                        <option>--</option>
+                                        <option>-0.25</option>
+                                        <option>-0.50</option>
+                                        <option>-0.75</option>
+                                        <option>-1.00</option>
+                                        <option>-1.25</option>
+                                        <option>-1.50</option>
+                                        <option>-1.75</option>
+                                        <option>-2.00</option>
+                                    </select>
+                                </div>
+                                <div id="oesquerdo-sim" style="display: none;">
+                                <span>Grau Esférico Olho Esquerdo</span>
+                                    <select name="oe-sim" class="form-control" id="oe-sim">
+                                        <option>--</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                        <option>-5.25</option>
+                                        <option>-5.50</option>
+                                        <option>-5.75</option>
+                                        <option>-6.00</option>
+                                        <option>-6.25</option>
+                                        <option>-6.50</option>
+                                        <option>-6.75</option>
+                                        <option>-7.00</option>
+                                        <option>-7.25</option>
+                                        <option>-7.50</option>
+                                        <option>-7.75</option>
+                                        <option>-8.00</option>
+                                        <option>-8.25</option>
+                                        <option>-8.50</option>
+                                        <option>-8.75</option>
+                                        <option>-9.00</option>
+                                        <option>-9.25</option>
+                                        <option>-9.50</option>
+                                        <option>-9.75</option>
+                                        <option>-10.00</option>
+                                    </select>
+                                </div>
+                                <div id="oesquerdo-nao" style="display: none;">
+                                <span>Grau Esférico Olho Esquerdo</span>
+                                    <select name="oe-nao" class="form-control" id="oe-nao">
+                                        <option>--</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                        <option>-5.25</option>
+                                        <option>-5.50</option>
+                                        <option>-5.75</option>
+                                        <option>-6.00</option>
+                                        <option>-6.25</option>
+                                        <option>-6.50</option>
+                                        <option>-6.75</option>
+                                        <option>-7.00</option>
+                                        <option>-7.25</option>
+                                        <option>-7.50</option>
+                                        <option>-7.75</option>
+                                        <option>-8.00</option>
+                                        <option>-8.25</option>
+                                        <option>-8.50</option>
+                                        <option>-8.75</option>
+                                        <option>-9.00</option>
+                                        <option>-9.25</option>
+                                        <option>-9.50</option>
+                                        <option>-9.75</option>
+                                        <option>-10.00</option>
+                                        <option>-10.25</option>
+                                        <option>-10.50</option>
+                                        <option>-10.75</option>
+                                        <option>-11.00</option>
+                                        <option>-11.25</option>
+                                        <option>-11.50</option>
+                                        <option>-11.75</option>
+                                        <option>-12.00</option>
+                                    </select> 
+                                </div>
+                            </div>
+                            <!--          Fim lente Prime             -->
+
+                            <!--          Lente Vision                -->
+                            
+                            <div class="col-md-6">
+                                <div id="vision-od" style="display: none;">  
+                                    <h3>Lente Vision</h3>                               
+                                    <span>Grau Cilindrico Olho Direito</span>
+                                    <select name="quanto-vision-od" class="form-control" id="quanto-vision-od">
+                                        <option>--</option>
+                                        <option>-0.25</option>
+                                        <option>-0.50</option>
+                                        <option>-0.75</option>
+                                        <option>-1.00</option>
+                                        <option>-1.25</option>
+                                        <option>-1.50</option>
+                                        <option>-1.75</option>
+                                        <option>-2.00</option>
+                                        <option>-2.25</option>
+                                        <option>-2.50</option>
+                                        <option>-2.75</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                    </select>
+                                </div>
+                                <div id="odireito-vision" style="display: none;">
+                                <span>Grau Esférico Olho Direito</span>
+                                    <select name="od-vision" class="form-control" id="od-vision">
+                                        <option>--</option>
+                                        <option>0.00</option>
+                                        <option>-0.25</option>
+                                        <option>-0.50</option>
+                                        <option>-0.75</option>
+                                        <option>-1.00</option>
+                                        <option>-1.25</option>
+                                        <option>-1.50</option>
+                                        <option>-1.75</option>
+                                        <option>-2.00</option>
+                                        <option>-2.25</option>
+                                        <option>-2.50</option>
+                                        <option>-2.75</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                        <option>-5.25</option>
+                                        <option>-5.50</option>
+                                        <option>-5.75</option>
+                                        <option>-6.00</option>
+                                        <option>-6.25</option>
+                                        <option>-6.50</option>
+                                        <option>-6.75</option>
+                                        <option>-7.00</option>
+                                        <option>-7.25</option>
+                                        <option>-7.50</option>
+                                        <option>-7.75</option>
+                                        <option>-8.00</option>
+                                        <option>-8.25</option>
+                                        <option>-8.50</option>
+                                        <option>-8.75</option>
+                                        <option>-9.00</option>
+                                        <option>-9.25</option>
+                                        <option>-9.50</option>
+                                        <option>-9.75</option>
+                                        <option>-10.00</option>
+                                        <option>-10.25</option>
+                                        <option>-10.50</option>
+                                        <option>-10.75</option>
+                                        <option>-11.00</option>
+                                        <option>-11.25</option>
+                                        <option>-11.50</option>
+                                        <option>-11.75</option>
+                                        <option>-12.00</option>
+                                        <option>-12.25</option>
+                                        <option>-12.50</option>
+                                        <option>-12.75</option>
+                                        <option>-13.00</option>
+                                        <option>-13.25</option>
+                                        <option>-13.50</option>
+                                        <option>-13.75</option>
+                                        <option>-14.00</option>
+                                        <option>-14.25</option>
+                                        <option>-14.50</option>
+                                        <option>-14.75</option>
+                                        <option>-15.00</option>
+                                    </select>
+                                </div>  
+                            </div>
+                            <div class="col-md-6">
+                                <div id="vision-oe" style="display: none;">
+                                    <span>Grau Cilindrico Olho Esquerdo</span>
+                                    <select name="quanto-vision-oe" class="form-control" id="quanto-vision-oe">
+                                        <option>--</option>
+                                        <option>-0.25</option>
+                                        <option>-0.50</option>
+                                        <option>-0.75</option>
+                                        <option>-1.00</option>
+                                        <option>-1.25</option>
+                                        <option>-1.50</option>
+                                        <option>-1.75</option>
+                                        <option>-2.00</option>
+                                        <option>-2.25</option>
+                                        <option>-2.50</option>
+                                        <option>-2.75</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                    </select>
+                                </div>                             
+                                <div id="oesquerdo-vision" style="display: none;">
+                                <span>Grau Esférico Olho Esquerdo</span>
+                                    <select name="oe-vision" class="form-control" id="oe-vision">
+                                        <option>--</option>
+                                        <option>0.00</option>
+                                        <option>-0.25</option>
+                                        <option>-0.50</option>
+                                        <option>-0.75</option>
+                                        <option>-1.00</option>
+                                        <option>-1.25</option>
+                                        <option>-1.50</option>
+                                        <option>-1.75</option>
+                                        <option>-2.00</option>
+                                        <option>-2.25</option>
+                                        <option>-2.50</option>
+                                        <option>-2.75</option>
+                                        <option>-3.00</option>
+                                        <option>-3.25</option>
+                                        <option>-3.50</option>
+                                        <option>-3.75</option>
+                                        <option>-4.00</option>
+                                        <option>-4.25</option>
+                                        <option>-4.50</option>
+                                        <option>-4.75</option>
+                                        <option>-5.00</option>
+                                        <option>-5.25</option>
+                                        <option>-5.50</option>
+                                        <option>-5.75</option>
+                                        <option>-6.00</option>
+                                        <option>-6.25</option>
+                                        <option>-6.50</option>
+                                        <option>-6.75</option>
+                                        <option>-7.00</option>
+                                        <option>-7.25</option>
+                                        <option>-7.50</option>
+                                        <option>-7.75</option>
+                                        <option>-8.00</option>
+                                        <option>-8.25</option>
+                                        <option>-8.50</option>
+                                        <option>-8.75</option>
+                                        <option>-9.00</option>
+                                        <option>-9.25</option>
+                                        <option>-9.50</option>
+                                        <option>-9.75</option>
+                                        <option>-10.00</option>
+                                        <option>-10.25</option>
+                                        <option>-10.50</option>
+                                        <option>-10.75</option>
+                                        <option>-11.00</option>
+                                        <option>-11.25</option>
+                                        <option>-11.50</option>
+                                        <option>-11.75</option>
+                                        <option>-12.00</option>
+                                        <option>-12.25</option>
+                                        <option>-12.50</option>
+                                        <option>-12.75</option>
+                                        <option>-13.00</option>
+                                        <option>-13.25</option>
+                                        <option>-13.50</option>
+                                        <option>-13.75</option>
+                                        <option>-14.00</option>
+                                        <option>-14.25</option>
+                                        <option>-14.50</option>
+                                        <option>-14.75</option>
+                                        <option>-15.00</option>
+                                    </select>
+                                </div>   
+                            </div>
+                            <!--            Fim Lente Vision            -->
+                        </div>
+                       </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <p>Richard Marusso Todos os Direitos Reservados</p>
+            </div> 
+
+            <script type="text/javascript">
+            //Exibe Lente Vision se não possuir grau esferico entre -3 e -12 
+                 $(function () {
+                    $("#lentes").change(function () {
+                        if ($(this).val() == "N") {
+                            $("#vision-od").show();
+                            $("#vision-oe").show();
+                            $("#odireito-vision").show();
+                            $("#oesquerdo-vision").show();
+                                               
+                        } else {
+                            $("#vision-od").hide();
+                            $("#vision-oe").hide();
+                            $("#odireito-vision").hide();
+                            $("#oesquerdo-vision").hide();
+                        }
+                    });
+                });
+            // Fim da Função
+
+            //Exibe Lente Prime se possui grau esferico entre -3 e -12
+                $(function () {
+                    $("#lentes").change(function () {
+                        if ($(this).val() == "S") {
+                            $("#possui-od").show();
+                            $("#possui-oe").show();
+                            
+                        } else {
+                            $("#possui-od").hide();
+                            $("#possui-oe").hide();
+                        }
+                    });
+                }); 
+            // Fim da Função
+
+                $(function () {
+                    $("#od").change(function () {
+                        if ($(this).val() == "S-od") {
+                            $("#quanto-odireito").show();
+                            $("#odireito-sim").show();
+                            
+                        } else {
+                            $("#quanto-odireito").hide();
+                            $("#odireito-sim").hide();
+                        }
+                    });
+                    $("#oe").change(function () {
+                        if ($(this).val() == "S-oe") {
+                            $("#quanto-oesquerdo").show();
+                            $("#oesquerdo-sim").show();
+                            
+                        } else {
+                            $("#quanto-oesquerdo").hide();
+                            $("#oesquerdo-sim").hide();
+                        }
+                    });
+                    $("#od").change(function () {
+                        if ($(this).val() == "N-od") {                         
+                            $("#odireito-nao").show();                           
+                        } else {                           
+                            $("#odireito-nao").hide();
+                        }
+                    });
+                    $("#oe").change(function () {
+                        if ($(this).val() == "N-oe") {                         
+                            $("#oesquerdo-nao").show();
+                            
+                        } else {                           
+                            $("#oesquerdo-nao").hide();
+                        }
+                    });
+                });
+
+                $(function () {
+                    $("#lentes").change(function () {
+                        if ($(this).val() == "S") {
+                            $("#possui-od").show();
+                            $("#possui-oe").show();
+                            
+                        } else {
+                            $("#possui-od").hide();
+                            $("#possui-oe").hide();
+                        }
+                    });
+                });
+                
+            </script>           
+        </div>
+    </body>
+</html>
